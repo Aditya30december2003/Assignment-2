@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+    <meta charset="UTF-8">
+    <title>Lunch Checker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="LunchCheckController">
+    <h1>Lunch Checker</h1>
+    <div>
+        <input type="text" placeholder="Enter comma-separated items" ng-model="lunchItems">
+        <button ng-click="checkLunch()">Check If Too Much</button>
+    </div>
+    <div class="message" ng-style="messageStyle">{{message}}</div>
+</body>
+<script src="app.js"></script>
+</html>
